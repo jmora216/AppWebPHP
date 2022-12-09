@@ -29,11 +29,8 @@ class controladorCarrito {
             $obj = $this->crud->Obtener($_REQUEST['codigo']);
             $this->crud2->AgregarProducto($_SESSION['ID'], $obj);
         }
-        if ($_SESSION['rol'] == 'admin') {
-            require_once 'vista/paginaProductos.php';
-        } else {
-            require_once 'vista/paginaProductoNoAdmin.php';
-        }
+        require_once 'vista/paginaProductos.php';
+        
     }
 
     public function ListarCarrito() {

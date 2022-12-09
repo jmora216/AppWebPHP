@@ -22,12 +22,21 @@ class clsProductoCRUD {
         $this->auxPDO = $this->conexion->pdo;
     }
 
-    public function Listar() {
+    public function Listar($valor) {
         try {
             $resultado = array();
-
-            $consulta = $this->auxPDO->prepare("SELECT * FROM producto");
-            $consulta->execute();
+            if($valor==-1 || $valor==null || $valor==""){
+                $cadenaConsulta = 'SELECT * FROM producto';
+            }else{
+                $cadenaConsulta = 'SELECT * FROM producto WHERE precio <= ?';
+            }
+            //$consulta = $this->auxPDO->prepare("SELECT * FROM producto");
+            $consulta = $this->auxPDO->prepare($cadenaConsulta);
+            if($valor==-1 || $valor==null || $valor==""){
+                $consulta->execute();   
+            }else{
+                $consulta->execute(array($valor));   
+            }
 
             foreach ($consulta->fetchAll(PDO::FETCH_OBJ) as $obj) {
                 $this->auxProducto = new clsProducto();

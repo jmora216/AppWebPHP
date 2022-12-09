@@ -11,13 +11,21 @@ class controladorAdmin {
 
     //atributos
     private $crud;
+    private $lista;
+    private $precio=-1;
 
     //metodos
     public function __construct() {
         $this->crud = new clsProductoCRUD();
+        $this->lista = array();
     }
 
     public function Index() {
+        $this->Listar();
+    }
+     public function Listar(){
+        $this->precio = filter_input(INPUT_POST, "precio");
+        $this->lista = $this->crud->Listar($this->precio);
         require_once 'vista/paginaProductos.php';
     }
 

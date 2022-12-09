@@ -3,8 +3,23 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/AppWebPHPMVCTaller3/vista/formularioProducto.php</file>
-            <file>file:/C:/xampp/htdocs/AppWebPHPMVCTaller3/vista/paginaProductos.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/controlador/controlador.Carrito.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/vista/paginaProductoNoAdmin.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/vista/navBarUsuario.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/vista/navBar.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/controlador/controlador.Admin.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/modelo/controlador.NoAdmin.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/vista/paginaConsultas.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/index.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/modelo/clsProductoCRUD.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/controlador/controlador.NoAdmin.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/modelo/clsCarritoCRUD.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/controlador/controlador.Principal.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/modelo/clsUsuarioCRUD.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/vista/inicioSesion.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/vista/paginaProductos.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/vista/paginaCarrito.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/controlador/controlador.Consultas.php</file>
         </group>
     </open-files>
 </project-private>

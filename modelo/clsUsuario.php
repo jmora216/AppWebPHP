@@ -13,6 +13,7 @@ class clsUsuario {
     private $apellido;
     private $usuario;
     private $clave;
+    private $rol;
 
     //metodos
     public function __GET($atr) {
