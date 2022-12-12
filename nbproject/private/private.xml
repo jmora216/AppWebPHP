@@ -8,6 +8,7 @@
             <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/vista/navBarUsuario.php</file>
             <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/vista/navBar.php</file>
             <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/controlador/controlador.Admin.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/modelo/clsProducto.php</file>
             <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/modelo/controlador.NoAdmin.php</file>
             <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/vista/paginaConsultas.php</file>
             <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/index.php</file>
@@ -16,9 +17,11 @@
             <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/modelo/clsCarritoCRUD.php</file>
             <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/controlador/controlador.Principal.php</file>
             <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/modelo/clsUsuarioCRUD.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/modelo/clsCarrito.php</file>
             <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/vista/inicioSesion.php</file>
             <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/vista/paginaProductos.php</file>
             <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/vista/paginaCarrito.php</file>
+            <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/modelo/clsConexion.php</file>
             <file>file:/C:/xampp/htdocs/web/Taller2crud/entrega/AppWebPHP/controlador/controlador.Consultas.php</file>
         </group>
     </open-files>

@@ -52,6 +52,7 @@ class controladorAdmin {
 
     public function Eliminar() {
         $this->crud->Eliminar($_REQUEST['codigo']);
+        $this->Listar();
         require_once 'vista/paginaProductos.php';
     }
 

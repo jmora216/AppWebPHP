@@ -12,6 +12,8 @@ class controladorCarrito {
 
     //atributos
     private $crud;
+    private $crud2;
+    private $lista;
 
     //metodos
     public function __construct() {
@@ -29,8 +31,8 @@ class controladorCarrito {
             $obj = $this->crud->Obtener($_REQUEST['codigo']);
             $this->crud2->AgregarProducto($_SESSION['ID'], $obj);
         }
+        $this->lista = $this->crud->Listar(-1);
         require_once 'vista/paginaProductos.php';
-        
     }
 
     public function ListarCarrito() {
@@ -39,7 +41,7 @@ class controladorCarrito {
     }
     
     public function EliminarProducto() {
-        $this->crud2->EliminarProducto($_REQUEST['codigoProducto']);
+        $this->crud2->EliminarProducto($_REQUEST['codigoProducto'],$_SESSION['ID']);
         require_once 'vista/paginaCarrito.php';
     }
 

@@ -34,7 +34,7 @@
                             <td><?php echo $item->precioProducto; ?></td>
                             <td>
                                 <a onclick="javascript: return confirm('¿Está seguro de eliminar este producto?');" 
-                                   href="?c=Carrito&a=EliminarProducto&codigoProducto=<?php echo $item->codigoProducto ?>">
+                                   href="?c=Carrito&a=EliminarProducto&codigoProducto=<?php echo $item->id ?>">
                                     <img src="css/eliminar.png"></a>
                             </td>
                         </tr>
