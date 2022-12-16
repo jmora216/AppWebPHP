@@ -1,19 +1,24 @@
+<?php 
+    if ($_SESSION['rol'] == 'admin') { 
+        require_once 'vista/navBar.php';
+    }else{
+        require_once 'vista/navBarUsuario.php';
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/estiloProductos.php">
         <title>Lista de productos</title>
     </head>
     <body background="fondo1.jpg">
     <center>
-        <div class="table-wrapper">
-            <table class="fl-table">
-                <h1>Carrito</h1>
-
+        <div class="container mt-3">
+            <table class="table table-hover table-light">
                 <?php $user = $_SESSION['usuario']; ?>
                 <?php $total = 0.0; ?>
-                <h2> Hola, <?php echo $user; ?></h2>
+                <h4> Carrito de compra</h4>
+                <h4> Hola <?php echo $user; ?>, estos son tus productos</h4>
                 <thead>
                     <tr>
                         <th>Nombre</th>
@@ -29,7 +34,7 @@
                             <td><?php echo $item->precioProducto; ?></td>
                             <td>
                                 <a onclick="javascript: return confirm('¿Está seguro de eliminar este producto?');" 
-                                   href="?c=Carrito&a=EliminarProducto&codigoProducto=<?php echo $item->codigoProducto ?>">
+                                   href="?c=Carrito&a=EliminarProducto&codigoProducto=<?php echo $item->id ?>">
                                     <img src="css/eliminar.png"></a>
                             </td>
                         </tr>
@@ -44,15 +49,7 @@
                 <?php endforeach; ?>
 
             </table>
-            <h2> Total = <?php echo $total; ?> </h2>
-            <br>
-            <?php if ($_SESSION['rol'] == 'admin') { ?>
-                <button id="boton" onclick="document.location = '?c=Admin&a=Index'">Regresar</button> 
-            <?php } else { ?>
-                <button id="boton" onclick="document.location = '?c=NoAdmin&a=Index'">Regresar</button>
-            <?php } ?>
-
-            <button id="boton" onclick="document.location = '?c=Principal&a=cerrarSesion'">Cerrar Sesion</button>
+            <h5> Total = <?php echo $total; ?> </h5>
         </div>
     </center>
 </body>

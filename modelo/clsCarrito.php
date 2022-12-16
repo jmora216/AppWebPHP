@@ -8,6 +8,7 @@
 class clsCarrito {
 
     //atributos
+    private $id;
     private $codigoProducto;
     private $nombreProducto;
     private $precioProducto;

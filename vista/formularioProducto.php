@@ -21,11 +21,6 @@
                     </span></div>
                 <form action="?c=Admin&a=Guardar" method="POST">
                     <div class="row">
-                        <label>Codigo:</label>
-                        <input type="text" name="codigo" value="<?php echo $obj->codigo; ?>">
-                    </div>
-                    <br>
-                    <div class="row">
                         <label>Nombre:</label>
                         <input type="text" name="nombre" value="<?php echo $obj->nombre; ?>" required>
                     </div>

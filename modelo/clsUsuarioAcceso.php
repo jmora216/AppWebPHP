@@ -17,7 +17,7 @@ class crudUsuario {
 
     //metodos
     public function __construct() {
-        $this->con = new clsConexion('localhost', 'bdtaller2', 'root', '');
+        $this->con = new clsConexion('localhost', 'bdtaller2v2', 'root', '');
         $this->con->conectar();
         $this->auxPDO = $this->con->pdo;
     }

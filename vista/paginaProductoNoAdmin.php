@@ -1,18 +1,15 @@
+<?php require_once 'vista/navBarUsuario.php';?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/estiloProductos.php">
         <title>Lista de productos</title>
     </head>
     <body background="fondo1.jpg">
     <center>
-        <div class="table-wrapper">
-            <table class="fl-table">
-                <h1>Listado de Productos</h1>
-                <div>
-                    <button id="boton" onclick="document.location = '?c=Carrito&a=ListarCarrito'">Ver Carrito</button>
-                </div>
+        <div class="container mt-3">
+            <h3>Lista productos</h3>
+            <table class="table table-hover table-light">
                 <thead>
                     <tr>
                         <th>Código</th>
@@ -39,7 +36,6 @@
                 </tbody>
 
             </table>
-            <button id="boton" onclick="document.location = '?c=Principal&a=cerrarSesion'">Cerrar Sesion</button>
         </div>
     </center>
 </body>
